@@ -97,18 +97,18 @@ end
 # turn an array into itself repeated twice. So [1, 2, 3]
 # becomes [1, 2, 3, 1, 2, 3]
 def double_array(array)
-  
+  array.insert(3, 1, 2, 3)
 end
 
 # convert a symbol into a string
 def turn_symbol_into_string(symbol)
-  
+  symbol.to_str 
 end
 
 # get the average from an array, rounded to the nearest integer
 # so [10, 15, 25] should return 17
 def average_of_array(array)
-  
+  (array.reduce {|sum, n| (sum+n)}/ (3.0)).round
 end
 
 # get all the elements in an array, up until the first element
@@ -116,14 +116,14 @@ end
 # [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
 # becomes [1, 3, 5, 4, 1, 2]
 def get_elements_until_greater_than_five(array)
-  
+  array.shift(6)
 end
 
 # turn an array (with an even number of elements) into a hash, by
 # pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
 # {'a' => 'b', 'c' => 'd'}
 def convert_array_to_a_hash(array)
-  
+  Hash[*array]
 end
 
 # get all the letters used in an array of words and return
@@ -131,7 +131,7 @@ end
 # . e.g. the array ['cat', 'dog', 'fish'] becomes
 # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
 def get_all_letters_in_array_of_words(array)
-  
+  array.join.to_str.split("").sort
 end
 
 # swap the keys and values in a hash. e.g.

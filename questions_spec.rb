@@ -86,7 +86,7 @@ describe 'Ruby Homework' do
     expect(n).to eq 'different'
   end
 
-  fit 'total_of_array' do
+  it 'total_of_array' do
     n = total_of_array [1, 3, 5, 6, 2, 8]
     expect(n).to eq 25
   end
@@ -116,7 +116,7 @@ describe 'Ruby Homework' do
     expect(n).to eq({'a' => 'b', 'c' => 'd'})
   end
 
-  it 'get_all_letters_in_array_of_words' do
+  fit 'get_all_letters_in_array_of_words' do
     n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
     expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
   end
