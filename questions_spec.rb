@@ -66,7 +66,7 @@ describe 'Ruby Homework' do
     expect(b).to eq -7
   end
 
-  fit 'separate_array_into_even_and_odd_numbers' do
+  it 'separate_array_into_even_and_odd_numbers' do
     n = separate_array_into_even_and_odd_numbers [1, 2, 3, 4, 5, 6, 7]
     expect(n).to eq [[2, 4, 6], [1, 3, 5, 7]]
   end
@@ -86,7 +86,7 @@ describe 'Ruby Homework' do
     expect(n).to eq 'different'
   end
 
-  it 'total_of_array' do
+  fit 'total_of_array' do
     n = total_of_array [1, 3, 5, 6, 2, 8]
     expect(n).to eq 25
   end
